@@ -49,6 +49,9 @@
       </Properties>
     </Component>
     <Component class="composicao.SearchText" name="searchText1">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value=" "/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
