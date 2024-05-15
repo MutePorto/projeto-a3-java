@@ -27,6 +27,7 @@ public class Main extends javax.swing.JFrame {
     private Form_Aluno formAluno;
     private Form_Professor formProf;
     private Form_Turma formTurma;
+    
 
     public Main() {
         initComponents();
@@ -56,7 +57,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
         //  set when system open start with home form
-        setForm(new Form_Home());
+        setForm(new Form_Home()); 
     }
 
     private void setForm(JComponent com) {
@@ -158,9 +159,13 @@ public class Main extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Main Principal = new Main();
-                Principal.setVisible(true);
-                //Principal.setDefaultCloseOperation(EXIT_ON_CLOSE);
+                Login telaLogin = new Login();
+                telaLogin.setVisible(true);
+                //Main Principal = new Main();
+                
+                //Principal.setVisible(true);
+                
+                
             }
         });
     }
