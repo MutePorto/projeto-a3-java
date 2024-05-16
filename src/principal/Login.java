@@ -132,7 +132,10 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarActionPerformed
-        System.exit(0);
+        //System.exit(0);
+        AlunoView Tela_Aluno = new AlunoView();                
+        Tela_Aluno.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btn_cancelarActionPerformed
 
     private void btn_entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_entrarActionPerformed
