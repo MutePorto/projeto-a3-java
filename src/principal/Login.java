@@ -52,6 +52,11 @@ public class Login extends javax.swing.JFrame {
         btn_entrar.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btn_entrar.setForeground(new java.awt.Color(255, 255, 255));
         btn_entrar.setText("ENTRAR");
+        btn_entrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_entrarActionPerformed(evt);
+            }
+        });
 
         btn_cancelar.setBackground(new java.awt.Color(0, 102, 255));
         btn_cancelar.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -129,6 +134,12 @@ public class Login extends javax.swing.JFrame {
     private void btn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btn_cancelarActionPerformed
+
+    private void btn_entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_entrarActionPerformed
+        Main Principal = new Main();                
+        Principal.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btn_entrarActionPerformed
 
     
    

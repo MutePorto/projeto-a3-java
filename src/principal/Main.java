@@ -172,11 +172,11 @@ public class Main extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                //Login telaLogin = new Login();
-                //telaLogin.setVisible(true);
-                Main Principal = new Main();
+                Login telaLogin = new Login();
+                telaLogin.setVisible(true);
+                //Main Principal = new Main();
                 
-                Principal.setVisible(true);
+                //Principal.setVisible(true);
                 
             }
         });
