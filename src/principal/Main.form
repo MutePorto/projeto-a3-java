@@ -73,15 +73,6 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="componentes.Menu" name="menu">
-        </Component>
-        <Container class="javax.swing.JPanel" name="mainPanel">
-          <Properties>
-            <Property name="opaque" type="boolean" value="false"/>
-          </Properties>
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
-        </Container>
         <Container class="javax.swing.JPanel" name="jPanel1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -123,6 +114,15 @@
               </Properties>
             </Component>
           </SubComponents>
+        </Container>
+        <Component class="componentes.Menu" name="menu">
+        </Component>
+        <Container class="javax.swing.JPanel" name="mainPanel">
+          <Properties>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
         </Container>
       </SubComponents>
     </Container>

@@ -77,18 +77,15 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         panelBorder1 = new composicao.PanelBorder();
-        menu = new componentes.Menu();
-        mainPanel = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         lb_nomeLogin = new javax.swing.JLabel();
+        menu = new componentes.Menu();
+        mainPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         panelBorder1.setBackground(new java.awt.Color(242, 242, 242));
-
-        mainPanel.setOpaque(false);
-        mainPanel.setLayout(new java.awt.BorderLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -113,6 +110,9 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(lb_nomeLogin)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        mainPanel.setOpaque(false);
+        mainPanel.setLayout(new java.awt.BorderLayout());
 
         javax.swing.GroupLayout panelBorder1Layout = new javax.swing.GroupLayout(panelBorder1);
         panelBorder1.setLayout(panelBorder1Layout);
