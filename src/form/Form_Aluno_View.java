@@ -24,9 +24,9 @@ public class Form_Aluno_View extends javax.swing.JPanel {
         spTable.setCorner(JScrollPane.UPPER_RIGHT_CORNER, p);
         TableColumn col = table.getColumnModel().getColumn(0);
         col.setPreferredWidth(300);
-        table.addRow(new Object[]{"Algoritmos, lógica e programação", "10", "10", "10", StatusType.PENDING});
-        table.addRow(new Object[]{"Modelagem de software", "10", "10", "10", StatusType.PENDING});
-        table.addRow(new Object[]{"Programação de soluções computacionais", "10", "10", "10", StatusType.PENDING});
+        table.addRow(new Object[]{"Algoritmos, lógica e programação", "10", "10", "10", StatusType.CURSANDO});
+        table.addRow(new Object[]{"Modelagem de software", "10", "10", "10", StatusType.APPROVADO});
+        table.addRow(new Object[]{"Programação de soluções computacionais", "10", "10", "10", StatusType.REPROVADO});
     }
 
     @SuppressWarnings("unchecked")
