@@ -134,11 +134,12 @@ public class ModalCadAluno extends javax.swing.JFrame {
         if (rr ==0) {
             lb_titulo.setText("Cadastrar Aluno");
             btn_cadastrar.setText("CADASTRAR");
-        }else{
+        }else if (rr == 1){
             lb_titulo.setText("Alterar Cadastro");
             btn_cadastrar.setText("ALTERAR");
         }
     }
+    
     private void btn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarActionPerformed
         
         

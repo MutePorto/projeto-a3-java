@@ -71,6 +71,9 @@
               <Color blue="cc" green="cc" red="0" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="card_btn_cadastrarMousePressed"/>
+          </Events>
         </Component>
         <Component class="componentes.Card_btn" name="card_btn2">
           <Properties>

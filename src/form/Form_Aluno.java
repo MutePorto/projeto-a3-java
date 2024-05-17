@@ -7,9 +7,12 @@ import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import principal.ModalCadAluno;
 
 public class Form_Aluno extends javax.swing.JPanel {
-
+    
+    ModalCadAluno mca;
+    
     public Form_Aluno() {
         initComponents();
         card_btn_cadastrar.setData(new Model_Card(new ImageIcon(getClass().getResource("/com/raven/icon/8.png")), "Cadastrar"));
@@ -45,6 +48,11 @@ public class Form_Aluno extends javax.swing.JPanel {
 
         card_btn_cadastrar.setColor1(new java.awt.Color(0, 153, 153));
         card_btn_cadastrar.setColor2(new java.awt.Color(0, 204, 204));
+        card_btn_cadastrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                card_btn_cadastrarMousePressed(evt);
+            }
+        });
         panel.add(card_btn_cadastrar);
 
         card_btn2.setColor1(new java.awt.Color(0, 153, 255));
@@ -128,6 +136,15 @@ public class Form_Aluno extends javax.swing.JPanel {
                 .addGap(22, 22, 22))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void card_btn_cadastrarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_card_btn_cadastrarMousePressed
+        if (mca==null) { // faz com a tela modalCadAluno não seja instanciada 2 vezes.
+            mca = new ModalCadAluno();//instacia o modal se não houve nenhum aberto
+            mca.configuraModalCadAluno(0);//manda a referencia de configuração
+        }        
+        mca.setVisible(true);
+        
+    }//GEN-LAST:event_card_btn_cadastrarMousePressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
