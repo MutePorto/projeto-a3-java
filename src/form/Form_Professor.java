@@ -29,9 +29,9 @@ public class Form_Professor extends javax.swing.JPanel {
         TableColumn col = table.getColumnModel().getColumn(0);
         col.setPreferredWidth(300);
         spTable.setCorner(JScrollPane.UPPER_RIGHT_CORNER, p);
-        table.addRow(new Object[]{"Mike Bhand", "mikebhand@gmail.com", "Admin", "25 Apr,2018", StatusType.CURSANDO});
-        table.addRow(new Object[]{"Andrew Strauss", "andrewstrauss@gmail.com", "Editor", "25 Apr,2018", StatusType.CURSANDO});
-        table.addRow(new Object[]{"Kevin Pietersen", "kevinpietersen@gmail.com", "Admin", "25 Apr,2018", StatusType.CURSANDO});
+        table.addRow(new Object[]{"Mike Bhand", "mikebhand@gmail.com"});
+        table.addRow(new Object[]{"Andrew Strauss", "andrewstrauss@gmail.com"});
+        table.addRow(new Object[]{"Kevin Pietersen", "kevinpietersen@gmail.com"});
     }
 
     @SuppressWarnings("unchecked")
@@ -72,11 +72,11 @@ public class Form_Professor extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Name", "Email", "User Type", "Joined", "Status"
+                "Name", "Turma"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
