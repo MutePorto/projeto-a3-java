@@ -36,6 +36,11 @@ public class AlunoView extends javax.swing.JFrame {
         menu_Aluno1.addEventMenuSelected(new EventMenuSelected() {
             @Override
             public void selected(int index) {
+                if (index == 1) {
+                    
+                    
+                    
+                }
                 if (index == 5) {
                     int t = JOptionPane.showConfirmDialog(rootPane, "Sair agora?");
                     if (t==0) {

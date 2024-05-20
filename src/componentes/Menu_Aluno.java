@@ -30,7 +30,7 @@ public class Menu_Aluno extends javax.swing.JPanel {
 
     private void init() {
         
-        listMenuAluno.addItem(new Model_Menu("", "", Model_Menu.MenuType.EMPTY));
+        listMenuAluno.addItem(new Model_Menu("8", "Alterar senha", Model_Menu.MenuType.MENU));
         listMenuAluno.addItem(new Model_Menu("", "", Model_Menu.MenuType.EMPTY));
         listMenuAluno.addItem(new Model_Menu("", "", Model_Menu.MenuType.EMPTY));
         listMenuAluno.addItem(new Model_Menu("", "", Model_Menu.MenuType.EMPTY));        

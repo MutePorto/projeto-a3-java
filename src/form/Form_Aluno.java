@@ -7,7 +7,13 @@ import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.table.TableColumn;
 import principal.ModalCadAluno;
+
+/**
+ *
+ * @author Murilo Teixeira
+ */
 
 public class Form_Aluno extends javax.swing.JPanel {
     
@@ -23,6 +29,8 @@ public class Form_Aluno extends javax.swing.JPanel {
         spTable.getViewport().setBackground(Color.WHITE);
         JPanel p = new JPanel();
         p.setBackground(Color.WHITE);
+        TableColumn col = table.getColumnModel().getColumn(0);
+        col.setPreferredWidth(300);
         spTable.setCorner(JScrollPane.UPPER_RIGHT_CORNER, p);
         table.addRow(new Object[]{"Mike Bhand", "mikebhand@gmail.com", "Admin", "25 Apr,2018", StatusType.CURSANDO});
         table.addRow(new Object[]{"Andrew Strauss", "andrewstrauss@gmail.com", "Editor", "25 Apr,2018", StatusType.CURSANDO});
